@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Transitions & Animations Assignment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main-title">
+        🎬 CSS3 Transitions & Animations + JavaScript Functions
+      </h1>
+      <p class="subtitle">Interactive Web Development Assignment</p>
+    </header>
+
+    <main>
+      <!-- Part 1: CSS3 Transitions & Animations -->
+      <section id="css-demo" class="demo-section">
+        <h2>Part 1: CSS3 Transitions & Animations</h2>
+        <div class="demo-container">
+          <div class="button-group">
+            <button class="fancy-btn primary">Hover Me!</button>
+            <button class="fancy-btn secondary">Click for Pulse!</button>
+            <button class="fancy-btn accent">Gradient Magic</button>
+          </div>
+
+          <div class="animation-showcase">
+            <div class="animated-box bounce-box">Bouncing Box</div>
+            <div class="animated-box spin-box">Spinning Box</div>
+            <div class="animated-box fade-box">Fading Box</div>
+          </div>
+
+          <div class="card-container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Hover to Flip</h3>
+                  <p>CSS Transform</p>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Flipped!</h3>
+                  <p>3D Transformation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 2: JavaScript Functions -->
+      <section id="js-demo" class="demo-section">
+        <h2>
+          Part 2: JavaScript Functions (Scope, Parameters & Return Values)
+        </h2>
+        <div class="demo-container">
+          <div class="function-demos">
+            <div class="function-demo">
+              <h3>Scope Demonstration</h3>
+              <button onclick="showScopeDemo()" class="action-btn">
+                Show Scope Demo
+              </button>
+              <div id="scope-result" class="result-box"></div>
+            </div>
+
+            <div class="function-demo">
+              <h3>Parameter & Return Value Demo</h3>
+              <input
+                type="number"
+                id="num1"
+                placeholder="Enter first number"
+                value="5"
+              />
+              <input
+                type="number"
+                id="num2"
+                placeholder="Enter second number"
+                value="3"
+              />
+              <button onclick="calculateAndDisplay()" class="action-btn">
+                Calculate
+              </button>
+              <div id="calc-result" class="result-box"></div>
+            </div>
+
+            <div class="function-demo">
+              <h3>String Manipulation Functions</h3>
+              <input
+                type="text"
+                id="text-input"
+                placeholder="Enter some text"
+                value="Hello World"
+              />
+              <button onclick="manipulateText()" class="action-btn">
+                Transform Text
+              </button>
+              <div id="text-result" class="result-box"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Part 3: Combine CSS & JS -->
+      <section id="combo-demo" class="demo-section">
+        <h2>Part 3: Combining CSS Animations with JavaScript</h2>
+        <div class="demo-container">
+          <div class="interactive-demo">
+            <div class="control-panel">
+              <button
+                onclick="triggerBoxAnimation()"
+                class="action-btn primary"
+              >
+                🎯 Animate Box
+              </button>
+              <button
+                onclick="triggerColorCycle()"
+                class="action-btn secondary"
+              >
+                🌈 Color Cycle
+              </button>
+              <button onclick="toggleModal()" class="action-btn accent">
+                📋 Show Modal
+              </button>
+              <button onclick="startLoadingAnimation()" class="action-btn">
+                ⏳ Loading Demo
+              </button>
+            </div>
+
+            <div class="animation-playground">
+              <div id="js-animated-box" class="interactive-box">
+                <span>Click buttons to animate me!</span>
+              </div>
+            </div>
+
+            <div class="progress-demo">
+              <div id="loading-bar" class="loading-bar">
+                <div class="loading-fill"></div>
+              </div>
+              <div id="loading-text" class="loading-text">Ready to load...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal for demonstration -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="toggleModal()">&times;</span>
+        <h3>🎉 Modal Animation Demo</h3>
+        <p>
+          This modal slides in and fades using CSS animations triggered by
+          JavaScript!
+        </p>
+        <button onclick="toggleModal()" class="action-btn">Close</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>Created for CSS3 Transitions & Animations Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
